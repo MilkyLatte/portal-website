@@ -1,0 +1,53 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#main-title {
+  color: white;
+  font-size: 72px;
+  width: 500px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#sub-title {
+  color: white;
+}
+
+.title-container {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  0% {
+    padding-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 0px;
+  }
+}
+.banner-inner-container {
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pancake-button {
+  width: 60px;
+  height: 40px;
+}

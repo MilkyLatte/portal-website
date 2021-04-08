@@ -1,0 +1,49 @@
+.option {
+  display: flex;
+  background-color: #777da7;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.selected-option {
+  background-color: #ff5353;
+  cursor: default;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.optionText {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-container {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  -webkit-box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.token-title {
+  text-align: left;
+  font-size: 28px;
+}
+
+.token-text {
+  text-align: left;
+  font-size: 20px;
+}

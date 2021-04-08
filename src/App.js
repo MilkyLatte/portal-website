@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Spacer from "./components/Layout/Spacer";
+import Banner from "./Sections/Banner/Banner";
+import Mission from "./Sections/Mission/Mission";
+import RoadMap from "./Sections/Roadmap/Roadmap";
+import Token from "./Sections/Token/Token";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Mission />
+      <Token />
+      <RoadMap />
+      <Spacer height="100px" />
     </div>
   );
 }

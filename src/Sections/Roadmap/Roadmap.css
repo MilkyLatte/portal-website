@@ -1,0 +1,45 @@
+.road-map-node {
+  width: 20px;
+  height: 20px;
+  border: 4px solid rgba(0, 0, 0, 1);
+  border-radius: 12px;
+}
+
+.road-map-line {
+  /* height: 300px; */
+  width: 0px;
+  border-right: 1px solid rgb(48, 48, 48);
+}
+
+.road-map-dotted-line {
+  width: 0px;
+  border-right: 1px dotted rgb(48, 48, 48);
+}
+
+.completed {
+  background-color: rgb(47, 168, 78);
+}
+
+.in-progress {
+  background-color: white;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #2bbcff;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.road-map-description {
+  width: 300px;
+  text-align: left;
+}
