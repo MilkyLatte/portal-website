@@ -25,6 +25,13 @@ canvas {
   text-align: left;
 }
 
+.icon {
+  width: 50px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
 @keyframes fadeIn {
   0% {
     padding-top: 100px;

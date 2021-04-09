@@ -1,31 +1,32 @@
 import MainSectionContainer from "../../components/Layout/MainSectionContainer";
+import Spacer from "../../components/Layout/Spacer";
 import BaseText from "../../components/Text/BaseText";
 
 export default function Mission() {
   return (
-    <MainSectionContainer paddingHorizontal="100px">
-      <BaseText fontSize="42px" fontWeight="bold" textAlign="left">
-        Our mission
+    <MainSectionContainer paddingHorizontal="100px" height="auto">
+      <Spacer height="120px" />
+
+      <BaseText fontSize="42px" fontWeight="bold" textAlign="left" id="Mission">
+        Mission
       </BaseText>
-      <BaseText fontSize="20px">
-        I was tired of getting rugged. By either tokens that were memes or
-        tokens that promised their functionality but never kept their words. I
-        wanted to make a community token without any developer wallet. Although
-        it may have been foolish, because some have contacted me, asking me for
-        funds for marketing but they all left once I told them that I had no
-        personal shares of the token myself. But then I'd be breaking my promise
-        of having no dev wallet. We can grow together as a community. That's so
-        say that if you are a developer and want to join us, to make it better
-        then come here. If you're a front-ender, marketer, an artist - cool logo
-        or you've just got any ideas or anyways that you think you can help.
-        Tell me. We will not let your talent go to waste. We'll hold polls as a
-        community and make this token grow. Make a platform that grows. Together
-        we can turn it into an exchange, an NFT spot, a business, an anything!
-        There's really no limit to where we can go if we work on it together as
-        a team. Come join us. I will share my personal wallet holding on this if
-        you think you can make it grow. If you think you've got the talent,
-        idea, the smarts, anything. Come!
+      <Spacer height="40px" />
+
+      <BaseText fontSize="20px" textAlign="left">
+        <i>
+          ”United we stand and divided we fall. Let us join upon one another to
+          create a reality- a union of a true community. Let us join together as
+          the pillar of light, shining across the galaxy that leads us; Past the
+          Moon, past the Mars, to the Big dipper in the space afars! Join us and
+          see, to all that we can be! Let your voice come through, and your
+          ideas come true! Be it far, or be it soon; Be it early, or late
+          afternoon. First or last, it's all in the past. United together, all
+          we surpass!”
+        </i>{" "}
+        - The All Mighty Spoon
       </BaseText>
+
+      <Spacer height="40px" />
     </MainSectionContainer>
   );
 }

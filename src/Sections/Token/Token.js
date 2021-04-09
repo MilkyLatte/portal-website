@@ -98,9 +98,14 @@ export default function Token() {
   const [option, setOption] = useState("Community driven");
 
   return (
-    <MainSectionContainer paddingHorizontal="100px" height="auto">
+    <MainSectionContainer paddingHorizontal="100px" height="auto" id="Token">
+      <Spacer height="40px" />
       <BaseText fontSize="42px" fontWeight="bold" textAlign="left">
         Token ($SSPN)
+      </BaseText>
+      <Spacer height="12px" />
+      <BaseText fontSize="24px">
+        0x88e3bff2c9d07f548e6bfedf1e5c96b4e84ca8bc
       </BaseText>
       <Spacer height="40px" />
       <FeatureSelector

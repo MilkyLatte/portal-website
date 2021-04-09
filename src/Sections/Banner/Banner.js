@@ -1,7 +1,47 @@
 import { useEffect, useRef } from "react";
+import TwitterIcon from "../../components/Icons/TwitterIcon";
+import TelegramIcon from "../../components/Icons/TelegramIcon";
+
+import { HorizontalFlexContainer } from "../../components/Layout/HorizontalFlexContainer";
 import MainSectionContainer from "../../components/Layout/MainSectionContainer";
 import { VerticalFlexContainer } from "../../components/Layout/VerticalFlexContainer";
 import "./Banner.css";
+import Spacer from "../../components/Layout/Spacer";
+
+const socialMedia = [
+  {
+    link: "https://t.me/safespoonchat",
+    logo: <TelegramIcon color="white" size={300} />,
+  },
+
+  {
+    link: "https://twitter.com/SafeSpoon_",
+    logo: <TwitterIcon color="white" size={300} />,
+  },
+];
+
+function Icons() {
+  return (
+    <HorizontalFlexContainer width="100%" justify="flex-start">
+      {socialMedia.map((val, i) => (
+        <div
+          className="icon"
+          key={i}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.open(val.link);
+          }}
+          style={{
+            zIndex: 1000,
+          }}
+        >
+          {val.logo}
+        </div>
+      ))}
+    </HorizontalFlexContainer>
+  );
+}
 export default function Banner() {
   const canvas = useRef();
   const circleArray = useRef([]);
@@ -78,16 +118,17 @@ export default function Banner() {
     animate();
   }, []);
   return (
-    <MainSectionContainer backgroundColor="#222">
+    <MainSectionContainer backgroundColor="#222" id="Home">
       <canvas id="c" ref={canvas}></canvas>
       <div className="banner-inner-container">
         <VerticalFlexContainer justify="flex-start" align="flex-start">
           <div className="title-container">
             <h1 id="main-title">Welcome to SafeSpoon 🥄</h1>
-            <h3 id="sub-title">Saving the world one spoon at time</h3>
+            <h3 id="sub-title">Eating the moon one spoon at time</h3>
+            <Spacer height="32px" />
+            <Icons />
           </div>
         </VerticalFlexContainer>
-        <div className="pancake-button"></div>
       </div>
     </MainSectionContainer>
   );

@@ -4,6 +4,7 @@ export default function MainSectionContainer({
   backgroundColor,
   width,
   height,
+  id,
 }) {
   return (
     <div
@@ -18,6 +19,7 @@ export default function MainSectionContainer({
         overflow: "hidden",
         position: "relative",
       }}
+      id={id}
     >
       {children}
     </div>

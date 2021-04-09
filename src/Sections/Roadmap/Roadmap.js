@@ -6,7 +6,11 @@ import BaseText from "../../components/Text/BaseText";
 import "./Roadmap.css";
 export default function RoadMap() {
   return (
-    <MainSectionContainer height={"auto"} paddingHorizontal="100px">
+    <MainSectionContainer
+      height={"auto"}
+      paddingHorizontal="100px"
+      id="Roadmap"
+    >
       <BaseText fontSize="42px" fontWeight="bold" textAlign="left">
         Roadmap
       </BaseText>
