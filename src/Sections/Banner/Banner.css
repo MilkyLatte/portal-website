@@ -16,6 +16,16 @@ canvas {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  #main-title {
+    font-size: 48px;
+  }
+
+  #sub-title {
+    font-size: 14px;
+  }
+}
+
 .title-container {
   opacity: 1;
   animation-name: fadeIn;

@@ -4,7 +4,7 @@ import BaseText from "../../components/Text/BaseText";
 
 export default function Mission() {
   return (
-    <MainSectionContainer paddingHorizontal="100px" height="auto">
+    <MainSectionContainer paddingHorizontal="10vw" height="auto">
       <Spacer height="120px" />
 
       <BaseText fontSize="42px" fontWeight="bold" textAlign="left" id="Mission">

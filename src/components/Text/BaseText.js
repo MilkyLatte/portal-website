@@ -5,6 +5,7 @@ export default function BaseText({
   textAlign,
   children,
   id,
+  className,
 }) {
   return (
     <h3
@@ -16,6 +17,7 @@ export default function BaseText({
         margin: 0,
       }}
       id={id}
+      className={className}
     >
       {children}
     </h3>

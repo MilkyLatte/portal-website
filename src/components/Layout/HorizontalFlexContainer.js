@@ -7,6 +7,7 @@ export function HorizontalFlexContainer({
   justify,
   paddingHorizontal,
   paddingVertical,
+  flexWrap,
 }) {
   return (
     <div
@@ -21,6 +22,7 @@ export function HorizontalFlexContainer({
         alignItems: align,
         justifyContent: justify,
         padding: `${paddingVertical} ${paddingHorizontal}`,
+        flexWrap: flexWrap,
       }}
     >
       {children}

@@ -98,15 +98,20 @@ export default function Token() {
   const [option, setOption] = useState("Community driven");
 
   return (
-    <MainSectionContainer paddingHorizontal="100px" height="auto" id="Token">
+    <MainSectionContainer
+      paddingHorizontal="10vw"
+      height="auto"
+      width="100%"
+      id="Token"
+    >
       <Spacer height="40px" />
       <BaseText fontSize="42px" fontWeight="bold" textAlign="left">
         Token ($SSPN)
       </BaseText>
       <Spacer height="12px" />
-      <BaseText fontSize="24px">
+      <h3 fontSize="24px" id="token-address">
         0x88e3bff2c9d07f548e6bfedf1e5c96b4e84ca8bc
-      </BaseText>
+      </h3>
       <Spacer height="40px" />
       <FeatureSelector
         options={Object.keys(options)}
@@ -114,10 +119,10 @@ export default function Token() {
         currentOption={option}
       />
       <Spacer height="32px" />
-      <HorizontalFlexContainer width="100%">
+      <HorizontalFlexContainer width="100%" flexWrap="wrap">
         <VerticalFlexContainer flex={1} justify="center" align="center">
           <div className="icon-container">{options[option].icon}</div>
-          <Spacer height="200px" />
+          <Spacer height="50px" />
         </VerticalFlexContainer>
         <HorizontalFlexContainer flex={1} height="700px">
           {options[option].description}
