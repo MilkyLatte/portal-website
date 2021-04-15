@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Assets/spoon_logo.png";
+import BaseText from "../Text/BaseText";
 import "./Navbar.css";
 export default function Navbar() {
   const [colorClass, setColorClass] = React.useState("navbar-dark");
@@ -96,9 +97,11 @@ export default function Navbar() {
           <li className="nav-item">
             <a
               className="nav-link active"
-              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x88e3bff2c9d07f548e6bfedf1e5c96b4e84ca8bc&inputCurrency=BNB"
+              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0c384832e340b0a481b6ec313bd0fa0d7a267024"
             >
-              🚀 Buy now!
+              <BaseText fontSize="16px" fontWeight="500" color="white">
+                🚀 Buy now!
+              </BaseText>
             </a>
           </li>
         </ul>

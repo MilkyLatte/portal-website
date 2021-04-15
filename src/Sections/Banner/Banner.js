@@ -10,13 +10,8 @@ import Spacer from "../../components/Layout/Spacer";
 
 const socialMedia = [
   {
-    link: "https://t.me/safespoonchat",
-    logo: <TelegramIcon color="white" size={300} />,
-  },
-
-  {
-    link: "https://twitter.com/SafeSpoon_",
-    logo: <TwitterIcon color="white" size={300} />,
+    link: "https://t.me/ApeSocks",
+    logo: <TelegramIcon color="white" size={500} />,
   },
 ];
 
@@ -118,7 +113,7 @@ export default function Banner() {
     animate();
   }, []);
   return (
-    <MainSectionContainer backgroundColor="#222" id="Home">
+    <MainSectionContainer backgroundColor="#FFBD00" id="Home">
       <canvas id="c" ref={canvas}></canvas>
       <div className="banner-inner-container">
         <VerticalFlexContainer justify="flex-start" align="flex-start">
