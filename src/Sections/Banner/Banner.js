@@ -119,7 +119,7 @@ export default function Banner() {
         <VerticalFlexContainer justify="flex-start" align="flex-start">
           <div className="title-container">
             <h1 id="main-title">Welcome to ApeSocks 🧦</h1>
-            <h3 id="sub-title">Putting some monkeys with socks in the moon</h3>
+            <h3 id="sub-title">Putting some monkeys with socks on the moon</h3>
             <Spacer height="32px" />
             <Icons />
           </div>
