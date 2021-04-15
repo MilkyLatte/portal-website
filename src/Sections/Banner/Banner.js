@@ -123,8 +123,8 @@ export default function Banner() {
       <div className="banner-inner-container">
         <VerticalFlexContainer justify="flex-start" align="flex-start">
           <div className="title-container">
-            <h1 id="main-title">Welcome to SafeSpoon 🥄</h1>
-            <h3 id="sub-title">Eating the moon one spoon at time</h3>
+            <h1 id="main-title">Welcome to ApeSocks 🧦</h1>
+            <h3 id="sub-title">Putting some monkeys with socks in the moon</h3>
             <Spacer height="32px" />
             <Icons />
           </div>

@@ -12,10 +12,10 @@ function App() {
       <Navbar />
 
       <Banner />
-      <Mission />
+      {/* <Mission />
       <Token />
       <RoadMap />
-      <Spacer height="100px" />
+      <Spacer height="100px" /> */}
     </div>
   );
 }

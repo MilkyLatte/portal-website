@@ -57,7 +57,8 @@ export default function Navbar() {
       }}
     >
       <a className="navbar-brand ml-3" href="/">
-        <img src={logo} className="logo-img" alt=""></img>
+        ApeSocks
+        {/* <img src={logo} className="logo-img" alt=""></img> */}
       </a>
       <button
         className="navbar-toggler"
@@ -72,7 +73,7 @@ export default function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
+          {/* <li className="nav-item active">
             <a className="nav-link" href="#Banner">
               Home
             </a>
@@ -91,7 +92,7 @@ export default function Navbar() {
             <a className="nav-link" href="#Roadmap">
               Roadmap
             </a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a
               className="nav-link active"
