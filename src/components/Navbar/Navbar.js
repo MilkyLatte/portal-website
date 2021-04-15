@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Assets/spoon_logo.png";
+import logo from "../../Assets/APESOCKS_LOGO.png";
 import BaseText from "../Text/BaseText";
 import "./Navbar.css";
 export default function Navbar() {
@@ -58,8 +58,14 @@ export default function Navbar() {
       }}
     >
       <a className="navbar-brand ml-3" href="/">
-        ApeSocks
-        {/* <img src={logo} className="logo-img" alt=""></img> */}
+        <img
+          src={logo}
+          className="logo-img"
+          alt=""
+          style={{
+            width: "100px",
+          }}
+        ></img>
       </a>
       <button
         className="navbar-toggler"
@@ -99,7 +105,7 @@ export default function Navbar() {
               className="nav-link active"
               href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0c384832e340b0a481b6ec313bd0fa0d7a267024"
             >
-              <BaseText fontSize="16px" fontWeight="500" color="white">
+              <BaseText fontSize="16px" fontWeight="500">
                 🚀 Buy now!
               </BaseText>
             </a>

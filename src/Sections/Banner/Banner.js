@@ -11,7 +11,7 @@ import Spacer from "../../components/Layout/Spacer";
 const socialMedia = [
   {
     link: "https://t.me/ApeSocks",
-    logo: <TelegramIcon color="white" size={500} />,
+    logo: <TelegramIcon color="black" size={500} />,
   },
 ];
 

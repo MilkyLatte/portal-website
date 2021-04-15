@@ -5,7 +5,7 @@ canvas {
 }
 
 #main-title {
-  color: white;
+  color: black;
   font-size: 72px;
   width: 500px;
   font-weight: bold;
@@ -13,7 +13,7 @@ canvas {
 }
 
 #sub-title {
-  color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
