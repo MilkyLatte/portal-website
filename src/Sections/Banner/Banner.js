@@ -10,8 +10,8 @@ import Spacer from "../../components/Layout/Spacer";
 
 const socialMedia = [
   {
-    link: "https://t.me/ApeSocks",
-    logo: <TelegramIcon color="black" size={500} />,
+    link: "https://t.me/Portaltoken",
+    logo: <TelegramIcon color="white" size={500} />,
   },
 ];
 
@@ -113,13 +113,13 @@ export default function Banner() {
     animate();
   }, []);
   return (
-    <MainSectionContainer backgroundColor="#FFBD00" id="Home">
+    <MainSectionContainer backgroundColor="black" id="Home">
       <canvas id="c" ref={canvas}></canvas>
       <div className="banner-inner-container">
         <VerticalFlexContainer justify="flex-start" align="flex-start">
           <div className="title-container">
-            <h1 id="main-title">Welcome to ApeSocks 🧦</h1>
-            <h3 id="sub-title">Putting some monkeys with socks on the moon</h3>
+            <h1 id="main-title">Welcome to Portal</h1>
+            <h3 id="sub-title">Your portal straight to the moon!</h3>
             <Spacer height="32px" />
             <Icons />
           </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../Assets/APESOCKS_LOGO.png";
+import logo from "../../Assets/portal.gif";
 import BaseText from "../Text/BaseText";
 import "./Navbar.css";
 export default function Navbar() {
-  const [colorClass, setColorClass] = React.useState("navbar-dark");
+  const [colorClass, setColorClass] = React.useState("navbar-light");
   const [color, setColor] = React.useState(undefined);
   // const colorChange = () => {
   //   let navPosition = window.scrollY;
@@ -63,7 +63,7 @@ export default function Navbar() {
           className="logo-img"
           alt=""
           style={{
-            width: "100px",
+            width: "70px",
           }}
         ></img>
       </a>
@@ -103,9 +103,9 @@ export default function Navbar() {
           <li className="nav-item">
             <a
               className="nav-link active"
-              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0c384832e340b0a481b6ec313bd0fa0d7a267024"
+              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x36e433c6b4a0f19afc63358b36a4ffe8011be8be"
             >
-              <BaseText fontSize="16px" fontWeight="500">
+              <BaseText fontSize="16px" fontWeight="500" color="white">
                 🚀 Buy now!
               </BaseText>
             </a>
